@@ -17,6 +17,9 @@ class Navbar extends react.Component{
             <li>
               <Link to="/register">Register</Link>
             </li>
+            <li>
+              <Link to="/form">Form</Link>
+            </li>
           </ul></div>)
     }
 

@@ -3,6 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: chartreuse;
-
-  background: rgb(70, 50, 187);
+  margin: 0;
+  padding: 0;
+  background: rgb(98, 231, 209);
 }

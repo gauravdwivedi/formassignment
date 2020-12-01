@@ -52,8 +52,11 @@ class Login extends react.Component{
             <div className="field">
                 <input type="email" placeholder="Enter email"  required onChange={this.handleEmailChange} value={this.state.email}/>
             <input type="password" placeholder="Enter password" required onChange={this.handlePasswordChange} value={this.state.password}/>
-
-            <button onClick={this.handleFormSubmit} disabled={inProgress}>Login</button></div>
+                {inProgress ?
+                <button onClick={this.handleFormSubmit} disabled={inProgress}>Logging in...</button>:
+                <button onClick={this.handleFormSubmit}  disabled={inProgress}>Login</button>    
+            }
+            </div> 
             
             </form>
             
